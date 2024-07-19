@@ -52,52 +52,10 @@ xxx
 >>> 
 >>> 
 >>> 
->>> newList = extend(listOne, listTwo)
-Traceback (most recent call last):
-  File "<pyshell#42>", line 1, in <module>
-    newList = extend(listOne, listTwo)
-NameError: name 'extend' is not defined
->>> 
->>> 
->>> 
->>> newList = listOne.extend(listTwo)
->>> print(newList)
-None
->>> 
->>> print(listOne.extend(listTwo))
-None
->>> listOne.extend(listTwo)
->>> 
->>> 
->>> print(listOne.append(listTwo))
-None
->>> 
->>> 
->>> newList.extend(listOne, listTwo)
-Traceback (most recent call last):
-  File "<pyshell#56>", line 1, in <module>
-    newList.extend(listOne, listTwo)
-AttributeError: 'NoneType' object has no attribute 'extend'
->>> 
->>> 
->>> newList.extend([listOne, listTwo])
-Traceback (most recent call last):
-  File "<pyshell#59>", line 1, in <module>
-    newList.extend([listOne, listTwo])
-AttributeError: 'NoneType' object has no attribute 'extend'
->>> 
->>> 
 >>> listOne.extend([listTwo])
 >>> listOne
 ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'e', 'f', 'g', 'e', 'f', 'g', ['e', 'f', 'g'], ['e', 'f', 'g']]
 >>> 
->>> 
->>> 
->>> print(listOne.join(listTwo))
-Traceback (most recent call last):
-  File "<pyshell#67>", line 1, in <module>
-    print(listOne.join(listTwo))
-AttributeError: 'list' object has no attribute 'join'
 >>> 
 >>> 
 >>> 
@@ -216,19 +174,9 @@ Y
 >>> 
 >>> aList = ['a', 'b', 'c', 'd']
 >>> 
->>> newList.copy(aList)
-Traceback (most recent call last):
-  File "<pyshell#161>", line 1, in <module>
-    newList.copy(aList)
-AttributeError: 'NoneType' object has no attribute 'copy'
 >>> 
 >>> 
 >>> 
->>> newList = copy(aList)
-Traceback (most recent call last):
-  File "<pyshell#165>", line 1, in <module>
-    newList = copy(aList)
-NameError: name 'copy' is not defined
 >>> 
 >>> 
 >>> 
@@ -252,11 +200,6 @@ NameError: name 'copy' is not defined
 >>> 
 >>> 
 >>> 
->>> l = [sai] * 10
-Traceback (most recent call last):
-  File "<pyshell#186>", line 1, in <module>
-    l = [sai] * 10
-NameError: name 'sai' is not defined
 >>> 
 >>> 
 >>> l = [True] * 10
@@ -272,8 +215,6 @@ NameError: name 'sai' is not defined
 10
 >>> 
 >>> 
->>> l = [for] * 10
-SyntaxError: invalid syntax
 >>> l = [6] * 10
 >>> print(len(l))
 10
